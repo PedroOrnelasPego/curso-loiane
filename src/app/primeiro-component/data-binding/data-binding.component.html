@@ -1,0 +1,30 @@
+<section>
+  <article>
+    <h2>Interpolação | Interlotion</h2>
+    <p>string rendenizada com interpolação: {{ url }}</p>
+    <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+    <p>Resultado de 1 + 1 não é: {{ 1 + 1 + getValores() }}</p>
+    <p>
+      Curso de Angular e gosto de curso: {{ cursoAngular && getCurtirCurso() }}
+    </p>
+  </article>
+
+  <article>
+    <h3>Property Binding</h3>
+    <img src="{{ urlImage }}" /> <br />
+    <img [src]="urlImage" />
+  </article>
+
+  <article>
+    <h3>Class e Style Binding</h3>
+    <div>
+      Selecione uma classe:
+      <select #class>
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-danger">Danger</option>
+        <option value="alert-warning">Warning</option>
+        <option value="alert-info">Info</option>
+      </select>
+    </div>
+  </article>
+</section>
